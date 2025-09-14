@@ -1,4 +1,27 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+local redzlib = {
+    Themes = {
+        Blrd = {
+            ["Color Hub 1"] = ColorSequence.new({
+                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)),    -- Amarelo em cima
+                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 255)),     -- Azul no meio
+                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))    -- Amarelo embaixo
+            }),
+            ["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+            ["Color Stroke"] = Color3.fromRGB(40, 40, 40),
+            ["Color Theme"] = Color3.fromRGB(255, 0, 0),                       -- Vermelho para o tema
+            ["Color Text"] = Color3.fromRGB(255, 0, 0),                        -- Vermelho para o texto
+            ["Color Red Black Text"] = Color3.fromRGB(180, 0, 0)                    -- Vermelho escuro para texto escuro
+        }
+	}
+Info = {
+		Version = "1.1.0"
+	},
+	Save = {
+		UISize = {550, 380},
+		TabSize = 160,
+		Theme = "Blrd"
+}
 workspace.FallenPartsDestroyHeight = -math.huge
 
 local Window = Library:MakeWindow({
