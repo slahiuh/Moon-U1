@@ -1,4 +1,12 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+workspace.FallenPartsDestroyHeight = -math.huge
+
+local Window = Library:MakeWindow({
+    Title = "MoonU Hub | Brookhaven RP ",
+    SubTitle = "by: e0davizinTA and Herry",
+    LoadText = "Carregando MoonU Hub",
+    Flags = "MoonUHub_Broookhaven"
+})
 local redzlib = {
     Themes = {
         Blrd = {
@@ -21,15 +29,8 @@ Info = {
 		UISize = {550, 380},
 		TabSize = 160,
 		Theme = "Blrd"
-}
-workspace.FallenPartsDestroyHeight = -math.huge
-
-local Window = Library:MakeWindow({
-    Title = "MoonU Hub | Brookhaven RP ",
-    SubTitle = "by: e0davizinTA and Herry",
-    LoadText = "Carregando MoonU Hub",
-    Flags = "MoonUHub_Broookhaven"
-})
+	}
+	
 Window:AddMinimizeButton({
     Button = { Image = "rbxassetid://108662620575463", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(35, 1) },
